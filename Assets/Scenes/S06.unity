@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 287825384}
   - component: {fileID: 287825386}
   - component: {fileID: 287825385}
+  - component: {fileID: 287825387}
   m_Layer: 5
   m_Name: Stats
   m_TagString: Untagged
@@ -406,6 +407,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287825383}
   m_CullTransparentMesh: 1
+--- !u!114 &287825387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287825383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f137d14683e2e1f42a475148127bef13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIStats
+  data: {fileID: 11400000, guid: 80686076fcea6f04e9b568ba5e90860b, type: 2}
+  lifeText: {fileID: 0}
+  speedText: {fileID: 0}
+  strongText: {fileID: 0}
 --- !u!1 &349770881
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +704,7 @@ GameObject:
   - component: {fileID: 487918909}
   - component: {fileID: 487918911}
   - component: {fileID: 487918910}
+  - component: {fileID: 487918912}
   m_Layer: 5
   m_Name: Configuration
   m_TagString: Untagged
@@ -751,6 +769,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487918908}
   m_CullTransparentMesh: 1
+--- !u!114 &487918912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487918908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0dcbfe7f5437a4ba0f905894aee2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIConfiguration
+  data: {fileID: 11400000, guid: 36362ff3c0e24fd448eb55b63deac5d8, type: 2}
+  graphicsText: {fileID: 0}
+  volumeText: {fileID: 0}
+  sensitivityText: {fileID: 0}
+  languageText: {fileID: 0}
 --- !u!1 &641896548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1111,7 @@ GameObject:
   - component: {fileID: 853458479}
   - component: {fileID: 853458481}
   - component: {fileID: 853458480}
+  - component: {fileID: 853458482}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -1140,6 +1176,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853458478}
   m_CullTransparentMesh: 1
+--- !u!114 &853458482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853458478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2025d8a6793734b91f8abca25a707c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIInventory
+  data: {fileID: 11400000, guid: ba7041eacfd140840b4bff7bece472d9, type: 2}
+  pistolText: {fileID: 0}
+  armorText: {fileID: 0}
+  bulletsText: {fileID: 0}
 --- !u!1 &934793190
 GameObject:
   m_ObjectHideFlags: 0

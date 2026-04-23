@@ -1,16 +1,31 @@
 using UnityEngine;
+using TMPro;
 
 public class UIInventory : MonoBehaviour
 {
     public InvetoryData data;
-    void Start()
+    public TextMeshProUGUI pistolText;
+    public TextMeshProUGUI armorText;
+    public TextMeshProUGUI bulletsText;
+
+    void OnEnable() => Refresh();
+
+    public void Refresh()
     {
-        
+        pistolText.text = $"Pistol: {data.Pistol}";
+        armorText.text = $"Armor: {(data.Armor ? "Yes" : "No")}";
+        bulletsText.text = $"Bullets: {data.Bullets}";
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ModifyBullets(int value)
     {
-        
+        data.Bullets += value;
+        Refresh();
+    }
+
+    public void ToggleArmor()
+    {
+        data.Armor = !data.Armor;
+        Refresh();
     }
 }

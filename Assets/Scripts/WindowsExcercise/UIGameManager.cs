@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 public class UIGameManager : MonoBehaviour
 {
     public InputSystem_Actions inputs;
-    public WindowManager wmanager = new ();
+    public WindowManager wmanager = new();
+    private int currentSortingOrder = 0;
 
     private void Awake()
     {
@@ -27,15 +28,16 @@ public class UIGameManager : MonoBehaviour
 
     void Start()
     {
-        
+
     }
     void Update()
     {
-        
+
     }
     private void OnElementAdded(Window window)
     {
         window.window.SetActive(true);
+
         //->leo el contenido , lo activo y lo pongo al frente
     }
     private void OnElementRemoved(Window window)
@@ -46,19 +48,18 @@ public class UIGameManager : MonoBehaviour
 
     private void HideCurrentPanel(InputAction.CallbackContext context)
     {
+        if (wmanager.Count == 0) return;
 
-        while(wmanager.Pop().window.activeSelf == true)
+        if (!wmanager.Peek().window.activeSelf)
         {
-
+            wmanager.Pop();
+            HideCurrentPanel(context);
         }
-
-
-        //wmanager.Pop().window.activeSelf == false;
-        //->pop wmanager.pop()?
-        //-> verifico si la window de este pop esta activada o desactvida
-        //-> si esta activa funciono normalmente
-        //-> si ya esta desactivada hago una llamada recursiva haciendo pop hasta que encuentro uno que pueda desactivar
-        Debug.Log("Escape");
+        else
+        {
+            wmanager.Pop();
+            Debug.Log("Escape");
+        }
     }
 
     public void BtnOpenPanel(GameObject panel)
