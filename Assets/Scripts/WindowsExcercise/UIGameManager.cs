@@ -8,7 +8,6 @@ public class UIGameManager : MonoBehaviour
 {
     public InputSystem_Actions inputs;
     public WindowManager wmanager = new();
-    private int currentSortingOrder = 0;
 
     private void Awake()
     {
@@ -38,7 +37,8 @@ public class UIGameManager : MonoBehaviour
     {
         window.window.SetActive(true);
 
-        //->leo el contenido , lo activo y lo pongo al frente
+        // Traer al frente la ventana actual (mueve al final de la jerarquía)
+        window.window.transform.SetAsLastSibling();
     }
     private void OnElementRemoved(Window window)
     {

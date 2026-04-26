@@ -420,9 +420,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIStats
   data: {fileID: 11400000, guid: 80686076fcea6f04e9b568ba5e90860b, type: 2}
-  lifeText: {fileID: 0}
-  speedText: {fileID: 0}
-  strongText: {fileID: 0}
+  lifeText: {fileID: 1978949839}
+  speedText: {fileID: 1978949839}
+  strongText: {fileID: 1978949839}
 --- !u!1 &349770881
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,10 +782,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIConfiguration
   data: {fileID: 11400000, guid: 36362ff3c0e24fd448eb55b63deac5d8, type: 2}
-  graphicsText: {fileID: 0}
-  volumeText: {fileID: 0}
-  sensitivityText: {fileID: 0}
-  languageText: {fileID: 0}
+  graphicsText: {fileID: 1978949839}
+  volumeText: {fileID: 1978949839}
+  sensitivityText: {fileID: 1978949839}
+  languageText: {fileID: 1978949839}
 --- !u!1 &641896548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,9 +1189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIInventory
   data: {fileID: 11400000, guid: ba7041eacfd140840b4bff7bece472d9, type: 2}
-  pistolText: {fileID: 0}
-  armorText: {fileID: 0}
-  bulletsText: {fileID: 0}
+  pistolText: {fileID: 1978949839}
+  armorText: {fileID: 1978949839}
+  bulletsText: {fileID: 1978949839}
 --- !u!1 &934793190
 GameObject:
   m_ObjectHideFlags: 0
